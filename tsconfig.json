@@ -1,11 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "@components": ["components"],
+      "@UI": ["components/UI"],
+      "@pages": ["pages"],
+      "@redux": ["redux"],
+      "@hooks": ["hooks"],
+      "@layouts": ["layouts"],
+      "@images": ["images"],
+      "@interfaces": ["interfaces"],
+      "@router": ["router"]
+    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -20,7 +28,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
