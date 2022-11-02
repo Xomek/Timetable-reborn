@@ -1,0 +1,59 @@
+.button {
+  border-radius: 4px;
+  padding: 8px 10px;
+  border: none;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 2px 5px #000;
+  transition: all 0.2s;
+}
+
+.button:active {
+  transition: all 0.2s;
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+.button.contained.primary {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  margin: 10px;
+}
+
+.button.contained.error {
+  background-color: var(--error-color);
+  color: var(--white-color);
+}
+
+.button.outlined.primary {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.button.outlined.error {
+  border: 1px solid var(--error-color);
+  background-color: transparent;
+  color: var(--error-color);
+}
+
+.button.contained:disabled {
+  background-color: var(--disabled-color);
+  color: var(--disabled-color-text);
+  box-shadow: none;
+  cursor: auto;
+}
+
+.button.outlined:disabled {
+  border: 1px solid var(--disabled-color);
+  color: var(--disabled-color-text);
+  background-color: var(--disabled-color);
+  cursor: auto;
+}
+
+.button.outlined {
+  box-shadow: none;
+}
