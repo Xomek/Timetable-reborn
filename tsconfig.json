@@ -2,16 +2,16 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
-      "@UI/*": ["UI/*"],
-      "@pages/*": ["pages"],
-      "@redux/*": ["redux"],
-      "@hooks/*": ["hooks"],
-      "@layouts/*": ["layouts"],
-      "@images/*": ["images"],
-      "@enums/*": ["enums"],
-      "@interfaces/*": ["interfaces"],
-      "@router/*": ["router"]
+      // "@components/*": ["components/*"],
+      // "@UI/*": ["UI/*"],
+      // "@pages/*": ["pages"],
+      // "@redux/*": ["redux"],
+      // "@hooks/*": ["hooks"],
+      // "@layouts/*": ["layouts"],
+      // "@images/*": ["images"],
+      // "@enums/*": ["enums"],
+      // "@interfaces/*": ["interfaces"],
+      // "@router/*": ["router"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

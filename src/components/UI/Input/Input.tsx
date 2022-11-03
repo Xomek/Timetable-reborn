@@ -14,12 +14,17 @@ const Input: FC<InputProps> = ({
   label,
   onChange,
   color,
+  className,
   ...props
 }) => {
   return (
     <label className={styles.box}>
       <input
-        className={cn(styles.input, color && { [styles[color]]: color })}
+        className={cn(
+          styles.input,
+          className,
+          color && { [styles[color]]: color }
+        )}
         type={type}
         onChange={(e) => onChange && onChange(e)}
         {...props}
