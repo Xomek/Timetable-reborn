@@ -1,0 +1,29 @@
+.switch {
+  width: 70px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--disabled-color);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  transform: translateX(0px);
+  transition: all 0.2s;
+}
+
+.switch.active.primary {
+  background-color: var(--primary-color);
+}
+
+.switch.active.error {
+  background-color: var(--error-color);
+}
+
+.switch.active > .circle {
+  transform: translateX(30px);
+}
