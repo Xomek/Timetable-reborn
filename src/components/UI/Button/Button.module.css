@@ -9,6 +9,12 @@
   outline: none;
   box-shadow: 0px 2px 5px #000;
   transition: all 0.2s;
+  color: var(--white-color);
+  fill: var(--white-color);
+  min-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:active {
@@ -17,43 +23,44 @@
   box-shadow: none;
 }
 
+.button:disabled {
+  fill: var(--disabled-color-text);
+  cursor: auto;
+  box-shadow: none;
+}
+
+.button:disabled:active {
+  transform: translateY(0);
+}
+
 .button.contained.primary {
   background-color: var(--primary-color);
-  color: var(--white-color);
-  margin: 10px;
 }
 
 .button.contained.error {
   background-color: var(--error-color);
-  color: var(--white-color);
 }
 
 .button.outlined.primary {
   border: 1px solid var(--primary-color);
-  background-color: transparent;
   color: var(--primary-color);
+  fill: var(--primary-color);
 }
 
 .button.outlined.error {
   border: 1px solid var(--error-color);
-  background-color: transparent;
   color: var(--error-color);
+  fill: var(--error-color);
 }
 
-.button.contained:disabled {
-  background-color: var(--disabled-color);
-  color: var(--disabled-color-text);
-  box-shadow: none;
-  cursor: auto;
-}
-
+.button.contained:disabled,
 .button.outlined:disabled {
+  background-color: var(--disabled-color);
   border: 1px solid var(--disabled-color);
   color: var(--disabled-color-text);
-  background-color: var(--disabled-color);
-  cursor: auto;
 }
 
 .button.outlined {
+  background-color: transparent;
   box-shadow: none;
 }
